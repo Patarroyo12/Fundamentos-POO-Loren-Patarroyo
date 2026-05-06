@@ -1,6 +1,0 @@
-hola mundo init
-
-anexamos nueva linea de txt
-
-
-anexe otra linea 
