@@ -9,7 +9,7 @@ class Coche{
     double precio;
 
     void encender(){
-        cout <<"El coche esta enecendido" << endl;
+        cout <<"El coche esta encendido" << endl;
 
     }
     void acelerar (){
@@ -27,9 +27,5 @@ class Coche{
 int main(){
     Coche c_Jose;
     Coche c_Maria;
-
-
-
-
     return 0;
 }
