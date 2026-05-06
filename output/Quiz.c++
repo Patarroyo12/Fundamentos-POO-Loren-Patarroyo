@@ -9,15 +9,13 @@ class NameProduct{
     
 
     public:
-    int total(int p * int c){
-        return p*c;
-    }
+   
 
-    void setNameProduct(std::string n ){
+    void setName(std::string n ){
          this->name= n;
     }
-    std::string getNameProduct(){
-        return NameProduct;
+    std::string getName(){
+        return name;
     }
     void setPrice(int p){
         this->price= p;
@@ -35,18 +33,45 @@ class NameProduct{
 
 class Discount : public NameProduct{
     private:
-    int discount;
+    float discount;
 
     public:
-    void setDiscount(int d){
+    float Price_Dis;
+    void setDiscount(float d){
         this->discount =d;
     }
-    int getDiscount(){
+    float getDiscount(){
         return discount;
     }
-    int discountedprice(int )
+    
 
 };
+
+int main(){
+    NameProduct product;
+    Discount product_d;
+    int total;
+    float desc;
+    product.setName("Android");
+    product.getName();
+    product.setPrice(100000);
+    product.getPrice();
+    product.setAmount(2);
+    product.getAmount();
+ total= product.getPrice() *  product.getAmount();
+    std::cout << "Nombre: " << product.getName() << std::endl;
+    std::cout << "Precio: " << product.getPrice() << std::endl;
+    std::cout << "Cantidad: " << product.getAmount() << std::endl;
+    std::cout << "Total sin descuento: " << total << std::endl;
+
+    product_d.setDiscount(0.40);
+    product_d.getDiscount();
+
+    desc= total* product_d.getDiscount();
+    std::cout << "Precio con descuento: " << desc << std::endl;
+
+    return 0;
+}
 
 
 
