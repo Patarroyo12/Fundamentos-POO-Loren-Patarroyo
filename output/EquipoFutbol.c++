@@ -83,7 +83,4 @@ int main (){
     //Mostrar informacion 
     j.mostrarInfo();
     e.mostrarInfo();
-
-    
-
 }
